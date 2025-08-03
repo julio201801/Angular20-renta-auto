@@ -1,0 +1,32 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Renta Autos</span>
+</mat-toolbar>
+
+<mat-sidenav-container class="contenedor">
+  <mat-sidenav #sidenav mode="side" close>
+  <mat-nav-list>
+    <a mat-list-item routerLink="/inicio">
+      <mat-icon>home</mat-icon>
+      <span>Inicio</span>
+    </a>
+    <a mat-list-item routerLink="/catalogo">
+      <mat-icon>directions_car</mat-icon>
+      <span>Catálogo</span>
+    </a>
+    <a mat-list-item routerLink="/contacto">
+      <mat-icon>contact_mail</mat-icon>
+      <span>Contacto</span>
+    </a>
+  </mat-nav-list>
+</mat-sidenav>
+
+
+  <mat-sidenav-content class="contenido-vertical">
+    <router-outlet>
+      <app-inicio></app-inicio>
+    </router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

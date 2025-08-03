@@ -1,0 +1,10 @@
+.imagen-modal {
+  text-align: center;
+
+  img {
+    width: 100%; 
+    max-height: 80vh; 
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+}
